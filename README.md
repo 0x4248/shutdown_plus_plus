@@ -36,3 +36,17 @@ This is an example config file that stops a server, removes all files in `~/serv
 ```toml
 commands = systemctl stop server.service, rm -rf ~/server_tmp/*, sudo shutdown now
 ```
+## Build
+### prerequisites
+- make
+- g++
+
+### Build using make
+```bash
+make
+```
+
+### Build using g++
+```bash
+g++ -std=c++17 -o shutdown++ src/main.cpp
+```
